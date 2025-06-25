@@ -2,7 +2,7 @@
 
 In [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid), avoiding search and filtering based on checkbox column values can be achieved by specifying which columns should be included in search and filtering using the [SearchColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SearchController.html#Syncfusion_WinForms_DataGrid_SearchController_SearchColumns) collection.
 
-Additionally, a custom SearchHelperExt class can be created and override the FilterRecords method. Within this method, columns that are not part of the SearchColumns collection can be excluded from filtering.
+Additionally, a custom SearchHelperExt class can be created and override the [FilterRecords](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SearchController.html#Syncfusion_WinForms_DataGrid_SearchController_FilterRecords_System_Object_) method. Within this method, columns that are not part of the SearchColumns collection can be excluded from filtering.
  
  ```csharp
  this.sfDataGrid.SearchController = new SearchHelperExt(this.sfDataGrid);
