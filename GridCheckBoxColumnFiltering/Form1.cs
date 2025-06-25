@@ -13,7 +13,7 @@ using Syncfusion.WinForms.DataGrid.Renderers;
 using Syncfusion.WinForms.GridCommon.ScrollAxis;
 using Syncfusion.WinForms.Input;
 
-namespace SfDataGrid_Demo_4_8
+namespace SfDataGridDemo
 {
     public partial class Form1 : Form
     {

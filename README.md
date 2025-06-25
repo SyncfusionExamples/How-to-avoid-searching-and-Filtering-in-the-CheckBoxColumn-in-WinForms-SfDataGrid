@@ -1,6 +1,6 @@
-# How to avoid searching and Filtering in the CheckBoxColumn in WinForms SfDataGrid
+# How to avoid searching and filtering in the CheckBoxColumn in WinForms DataGrid (SfDataGrid)
 
-In [Winforms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid){target="_blank"}, avoiding search and filtering based on checkbox column values can be achieved by specifying which columns should be included in search and filtering using the [SearchColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SearchController.html#Syncfusion_WinForms_DataGrid_SearchController_SearchColumns) collection.
+In [Winforms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid), avoiding search and filtering based on checkbox column values can be achieved by specifying which columns should be included in search and filtering using the [SearchColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SearchController.html#Syncfusion_WinForms_DataGrid_SearchController_SearchColumns) collection.
 
 Additionally, a custom SearchHelperExt class can be created and override the FilterRecords method. Within this method, columns that are not part of the SearchColumns collection can be excluded from filtering.
  
@@ -50,14 +50,14 @@ Additionally, a custom SearchHelperExt class can be created and override the Fil
 
     private int GetFirstColumnIndex(SfDataGrid dataGrid, bool isSearching = false)
     {
-     int firstIndex = dataGrid.Columns.IndexOf(dataGrid.Columns.FirstOrDefault(x => x.Visible && x.Width != 0d && (x.AllowFocus || isSearching)));
-     if (firstIndex < 0)
+       int firstIndex = dataGrid.Columns.IndexOf(dataGrid.Columns.FirstOrDefault(x => x.Visible && x.Width != 0d && (x.AllowFocus || isSearching)));
+       if (firstIndex < 0)
          return firstIndex;
-     firstIndex += dataGrid.View != null ? dataGrid.View.GroupDescriptions.Count : 0;
-     if (dataGrid.ShowPreviewRow) firstIndex += 1;
-     if (dataGrid.ShowRowHeader)
+       firstIndex += dataGrid.View != null ? dataGrid.View.GroupDescriptions.Count : 0;
+       if (dataGrid.ShowPreviewRow) firstIndex += 1;
+       if (dataGrid.ShowRowHeader)
          firstIndex += 1;
-     return firstIndex;
+       return firstIndex;
     }
  } 
  ```

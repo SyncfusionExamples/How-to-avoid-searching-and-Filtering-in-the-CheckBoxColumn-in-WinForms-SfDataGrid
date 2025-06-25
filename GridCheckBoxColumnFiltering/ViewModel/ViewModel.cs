@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SfDataGrid_Demo_4_8
+namespace SfDataGridDemo
 {
     public class OrderInfoCollection
     {
