@@ -65,4 +65,4 @@ Additionally, a custom SearchHelperExt class can be created and override the Fil
 
 Take a moment to peruse the [WinForms DataGrid - Search](https://help.syncfusion.com/windowsforms/datagrid/search) documentation, where you can find about Searching and Filtering with code examples.
 
-[View sample in the GitHub](https://github.com/SyncfusionExamples/How-to-avoid-searching-and-Filtering-in-the-CheckBoxColumn-in-WinForms-SfDataGrid)
+[View sample in GitHub](https://github.com/SyncfusionExamples/How-to-avoid-searching-and-Filtering-in-the-CheckBoxColumn-in-WinForms-SfDataGrid)
