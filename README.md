@@ -1,4 +1,4 @@
-# How to avoid searching and filtering in the CheckBoxColumn in WinForms DataGrid (SfDataGrid)
+# How to avoid searching and filtering in the CheckBoxColumn in WinForms DataGrid?
 
 In [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid), avoiding search and filtering based on checkbox column values can be achieved by specifying which columns should be included in search and filtering using the [SearchColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SearchController.html#Syncfusion_WinForms_DataGrid_SearchController_SearchColumns) collection.
 
